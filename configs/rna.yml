@@ -1,4 +1,4 @@
-inputs: inputs/rna/*.fasta
+inputs: inputs/SILVA_138.1_SSURef_NR99_tax_silva.fasta
 k-low: 3
 k-high: 8
 vec-dim: 100
