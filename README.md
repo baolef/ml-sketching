@@ -38,4 +38,8 @@ To sketch the rna sequence using the rna2vec model, you can run the following co
 python scripts/sketch_rna2vec.py -m MODEL_PATH.w2v -i inputs/SILVA_138.1_SSURef_NR99_tax_silva.fasta -o inputs
 ```
 
+To sketch the rna sequence using the MinHash algorithm, you can run the following command to save the sketching in the `inputs/` folder:
 
+```bash
+python scripts/sketch_minhash.py -v 100 -i inputs/SILVA_138.1_SSURef_NR99_tax_silva.fasta -o inputs
+```
