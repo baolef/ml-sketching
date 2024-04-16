@@ -49,6 +49,16 @@ def universal_hashing():
 
     return h
 
+def kmerize(seq, k):
+    """Returns a list of all k-mers in seq
+    Input:
+        seq: string
+        k: int
+    Returns: 1 items as so:
+    a list of all k-mers in seq
+    """
+    return [seq[i:i + k] for i in range(len(seq) - k + 1)]
+
 
 def minhash_kmer(kmer, hash_functions):
     """Returns the minimum hash value of kmer using hash_functions
@@ -63,7 +73,7 @@ def minhash_kmer(kmer, hash_functions):
 
 def minhash(seq):
     seq = ''.join(splitter.get_acgt_seqs(str(seq)))
-    fragments = fragmenter.apply(rng, seq)
+    fragments = kmerize(seq, fragmenter.k_high)
     hash = [minhash_kmer(fragment, hash_functions) for fragment in fragments]
     return hash
 
