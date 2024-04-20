@@ -1,0 +1,11 @@
+input: inputs/SILVA_138_3_8_sliding_0_rna2vec.npz, level: 1, n_samples: 10000, n_classes: 84, acc: 0.8705
+input: inputs/SILVA_138_3_8_sliding_0_rna2vec.npz, level: 2, n_samples: 10000, n_classes: 191, acc: 0.814
+input: inputs/SILVA_138_3_8_sliding_0_rna2vec.npz, level: 3, n_samples: 10000, n_classes: 404, acc: 0.706
+input: inputs/SILVA_138_3_8_sliding_0_rna2vec.npz, level: 4, n_samples: 10000, n_classes: 690, acc: 0.6375
+input: inputs/SILVA_138_3_8_sliding_0_rna2vec.npz, level: 5, n_samples: 10000, n_classes: 1437, acc: 0.4105
+
+input: inputs/SILVA_138_3_8_sliding_0_minhash.npz, level: 1, n_samples: 10000, n_classes: 84, acc: 0.7005
+input: inputs/SILVA_138_3_8_sliding_0_minhash.npz, level: 2, n_samples: 10000, n_classes: 191, acc: 0.5755
+input: inputs/SILVA_138_3_8_sliding_0_minhash.npz, level: 3, n_samples: 10000, n_classes: 404, acc: 0.4245
+input: inputs/SILVA_138_3_8_sliding_0_minhash.npz, level: 4, n_samples: 10000, n_classes: 690, acc: 0.3325
+input: inputs/SILVA_138_3_8_sliding_0_minhash.npz, level: 5, n_samples: 10000, n_classes: 1437, acc: 0.2325

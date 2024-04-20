@@ -1,0 +1,11 @@
+input: inputs/SILVA_138_3_8_sliding_0_rna2vec.npz, distance: euclidean, level: 1, n_samples: 10000, n_classes: 84, ari: 0.4029136703251849
+input: inputs/SILVA_138_3_8_sliding_0_rna2vec.npz, distance: euclidean, level: 2, n_samples: 10000, n_classes: 191, ari: 0.4770780579712869
+input: inputs/SILVA_138_3_8_sliding_0_rna2vec.npz, distance: euclidean, level: 3, n_samples: 10000, n_classes: 404, ari: 0.35618537171821724
+input: inputs/SILVA_138_3_8_sliding_0_rna2vec.npz, distance: euclidean, level: 4, n_samples: 10000, n_classes: 690, ari: 0.3773987536096812
+input: inputs/SILVA_138_3_8_sliding_0_rna2vec.npz, distance: euclidean, level: 5, n_samples: 10000, n_classes: 1437, ari: 0.203538149948457
+
+input: inputs/SILVA_138_3_8_sliding_0_minhash.npz, distance: hamming, level: 1, n_samples: 10000, n_classes: 84, ari: 0.11972754890000153
+input: inputs/SILVA_138_3_8_sliding_0_minhash.npz, distance: hamming, level: 2, n_samples: 10000, n_classes: 191, ari: 0.07601725935125409
+input: inputs/SILVA_138_3_8_sliding_0_minhash.npz, distance: hamming, level: 3, n_samples: 10000, n_classes: 404, ari: 0.04485500271639442
+input: inputs/SILVA_138_3_8_sliding_0_minhash.npz, distance: hamming, level: 4, n_samples: 10000, n_classes: 690, ari: 0.07442580330012981
+input: inputs/SILVA_138_3_8_sliding_0_minhash.npz, distance: hamming, level: 5, n_samples: 10000, n_classes: 1437, ari: 0.08637872734824847
