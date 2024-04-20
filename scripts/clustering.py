@@ -20,8 +20,7 @@ def main(args):
     score = ari(y, model.labels_)
     print(f'Adjusted Rand Index: {score}')
     with open(args.output, 'a') as f:
-        f.write(
-            f'input: {args.input}, distance: {args.distance}, level: {args.column}, n_samples: {len(y)}, n_classes: {n_classes}, ari: {score}\n')
+        f.write(f'input: {args.input}, distance: {args.distance}, level: {args.column}, n_samples: {len(y)}, n_classes: {n_classes}, ari: {score}\n')
 
 
 if __name__ == '__main__':
