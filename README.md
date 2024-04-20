@@ -43,3 +43,18 @@ To sketch the rna sequence using the MinHash algorithm, you can run the followin
 ```bash
 python scripts/sketch_minhash.py -i inputs/SILVA_138.1_SSURef_NR99_tax_silva.fasta -o inputs
 ```
+
+To train the clustering model, you can run the following command:
+
+```bash
+python scripts/clustering.py -i inputs/SILVA_138_3_8_sliding_0_rna2vec.npz -c 1 -d euclidean
+python scripts/clustering.py -i inputs/SILVA_138_3_8_sliding_0_minhash.npz -c 1 -d hamming
+```
+
+Notice that `-c` is an integer to specify the level of classes in the inheritance tree and `-d` is a string to specify the distance metric, where we recommend to use `euclidean` for rna2vec and `hamming` for MinHash.
+
+To train the classification model, you can run the following command:
+
+```bash
+python scripts/classification.py -i inputs/SILVA_138_3_8_sliding_0_rna2vec.npz -c 1
+```
