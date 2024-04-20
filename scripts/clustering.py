@@ -1,46 +1,15 @@
 # Created by Baole Fang at 4/18/24
 
 import argparse
-import numpy as np
 from sklearn.cluster import AgglomerativeClustering
 from sklearn.metrics.pairwise import pairwise_distances
 from sklearn.metrics import adjusted_rand_score as ari
-
-
-def load(path, idx: int = 0, n=10000):
-    data = np.load(path, allow_pickle=True)
-    X = []
-    Y = []
-    for x, y in zip(data['X'], data['Y']):
-        ys = y.split(';')
-        if idx < len(ys):
-            X.append(x)
-            Y.append(ys[idx])
-    # sampler = RandomUnderSampler(random_state=0)
-    # counter = Counter(Y)
-    # keys = {k for k, v in counter.most_common(n)}
-    # X_, Y_=[], []
-    # for x, y in zip(X, Y):
-    #     if y in keys:
-    #         X_.append(x)
-    #         Y_.append(y)
-    # X, Y = np.array(X_), np.array(Y_)
-    # X, Y = sampler.fit_resample(X, Y)
-    # return X, Y
-    np.random.seed(args.seed)
-    idx = np.random.choice(len(Y), n, replace=False)
-    return np.array(X)[idx], np.array(Y)[idx]
-
-
-def jaccard_distance(x, y):
-    x = set(x)
-    y = set(y)
-    return 1 - len(x.intersection(y)) / len(x.union(y))
+from utils import load
 
 
 def main(args):
     print("Loading data...")
-    X, y = load(args.input, args.column, args.n)
+    X, y = load(args.input, args.column, args.n, args.seed)
     n_classes = len(set(y))
     print(f'Number of samples: {len(y)}')
     print(f'Number of classes: {n_classes}')
