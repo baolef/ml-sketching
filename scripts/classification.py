@@ -40,9 +40,10 @@ def main(args):
     plt.savefig(os.path.join(path, 'confusion.png'))
 
     n_classes = len(set(y))
-    score = model.score(X_test, y_test)
+    train_acc = model.score(X_train, y_train)
+    test_acc = model.score(X_test, y_test)
     with open(os.path.join(args.output, 'classification.txt'), 'a') as f:
-        f.write(f'input: {args.input}, level: {args.column}, n_samples: {len(y)}, n_classes: {n_classes}, acc: {score}\n')
+        f.write(f'input: {args.input}, level: {args.column}, n_samples: {len(y)}, n_classes: {n_classes}, train_acc: {train_acc}, test_acc: {test_acc}\n')
 
 
 if __name__ == '__main__':
