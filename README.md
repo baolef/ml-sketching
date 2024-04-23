@@ -61,6 +61,9 @@ python scripts/classification.py -i inputs/SILVA_138_3_8_sliding_0_rna2vec.npz -
 
 ## Results
 
-![clustering](figures/clustering.png) ![classification](figures/classification.png)
+<p float="left">
+  <img src="figures/clustering.png" width="49%" title="clustering"/>
+  <img src="figures/classification.png" width="49%" title="classification"/>
+</p>
 
 rna2vec outperforms MinHash in clustering and classification tasks.
