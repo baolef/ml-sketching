@@ -33,7 +33,6 @@ dependencies:
   - gstreamer=1.14.1=h5eee18b_1
   - icu=73.1=h6a678d5_0
   - idna=3.4=py38h06a4308_0
-  - imbalanced-learn=0.12.2=pyhd8ed1ab_0
   - importlib_resources=6.1.1=py38h06a4308_1
   - intel-openmp=2023.1.0=hdb19cb5_46306
   - joblib=1.2.0=py38h06a4308_0
