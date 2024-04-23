@@ -58,3 +58,10 @@ To train the classification model, you can run the following command:
 ```bash
 python scripts/classification.py -i inputs/SILVA_138_3_8_sliding_0_rna2vec.npz -c 1
 ```
+
+## Results
+
+![clustering](figures/clustering.png)
+![classification](figures/classification.png)
+
+rna2vec outperforms MinHash in clustering and classification tasks.
